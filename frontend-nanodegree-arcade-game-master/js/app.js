@@ -90,6 +90,8 @@ console.log(this.x);
             this.x += 50;
   }
   //move up on the y axis by 50
+  // not to go off the game on the upper side
+
   else if (Keys === 'up' ) {
 
         console.log(this.y);
@@ -100,11 +102,12 @@ console.log(this.x);
   }
 
   //move down on the y axis by 50
+  // not to go off the game on the down side
   else if (Keys === 'down' ) {
     console.log(this.y);
 
-    if(this.y<=450 ){
-      this.y=450;
+    if(this.y>=350 ){
+      this.y=350;
 
     };
 
